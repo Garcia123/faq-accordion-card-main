@@ -34,6 +34,7 @@ main {
   display: grid;
   grid-template-columns: 439px 481px;
   grid-template-rows: 509px;
+  box-shadow: 0 50px 50px -20px rgba(53, 18, 122, 0.50);
 
   @media screen and (max-width: 950px) {
       grid-template-columns: 327px;

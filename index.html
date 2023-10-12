@@ -98,6 +98,20 @@
 
     </div>
   </main>
+  <script>
+    Array.from(document.querySelectorAll('.acordion')).forEach(el => {
+      el.addEventListener('click',function() {
+        const csslist = this.classList;
+        if(csslist.contains('acordion--close')){
+          csslist.remove("acordion--close");
+          csslist.add("acordion--open");
+        } else if(csslist.contains('acordion--open')) {
+          csslist.remove("acordion--open");
+          csslist.add("acordion--close");
+        }
+      });
+    });
+  </script>
 
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
